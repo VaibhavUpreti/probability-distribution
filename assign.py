@@ -6,23 +6,15 @@ time = 500
 Event = {}
 # LOGIC
 # nCr * p ^k  * (1-p)^n-k
-
-
 def nCr(n, r):
     return (factorial(n) / (factorial(r) * factorial(n - r)))
-
-
 def factorial(n):
     if n == 0:
         return 1
     result = 1
-
     for i in range(2, n+1):
         result = result * i
-
     return result
-
-
 n = numEvents
 r = 0
 for k in range(numEvents+1):
@@ -37,8 +29,9 @@ x_axis = list(Event.keys())
 y_axis = list(Event.values())
 print(x_axis)
 print(y_axis)
-mt.stem(x_axis, y_axis)
+mt.bar(x_axis, y_axis)
+# mt.plot(x_axis, y_axis)
 mt.title("k success")
-mt.xlabel("Number of Trails")
+mt.xlabel("Number of Trials")
 mt.ylabel("Probability")
 mt.show()
