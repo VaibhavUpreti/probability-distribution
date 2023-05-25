@@ -1,14 +1,15 @@
+
+# Problem Statement
 Consider 20 independent repetitions of drawing a bulb from a lot. 
 
 Probability that the bulb drawn will work for more than 500 hrs is 0.2. 
 
 Plot a probability distribution using python or scilab for getting k success in 20 trial
 
-
 If I do something that has a constant probability of success - how many times do I need to do it to ensure that, on average, 
 I'll be successful?
 
-
+## Solution
 If you succeed with probability  𝑝  independently of all previous attempts, then the probability you succeed at least once 
 after  𝑘  tries is  1−(1−𝑝)𝑘 . To succeed at least once on average you need
 
